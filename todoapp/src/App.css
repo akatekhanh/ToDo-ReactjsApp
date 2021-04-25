@@ -1,3 +1,51 @@
 .App {
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+    width: 400px;
+    margin: auto;
+    padding: 0px 5px;
+}
+
+.App .AppHeader {
     text-align: center;
+}
+.App .AddItem   {
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.App .AddItem > img{
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+}
+.App .AddItem > input  {
+    /* display: flex; */
+    /* margin-left: 5px; */
+    display: inline-flex;
+    width: 100%;
+    border-style: none;
+    /* padding: 0px; */
+    /* border: 1px solid #eee */
+}
+
+.App .AddItem > input:focus{
+    outline: none;
+}
+
+.App .Items > img  {
+    width: 20px;
+    height: 20px; 
+    margin: 0px 10px;
+    
+    /* margin: 5px 5px; */
+    
+}
+.App .Items   {
+    display: flex;
+    align-items: center;
+    border: 1px solid #eee
 }

@@ -14,14 +14,14 @@ function App() {
     },
   ];
   const [items, setItems] = useState(initialState);
-  const onClickAddItem = (e) => setItems([...items, { title: e.target.value }]);
-  const showEvent = (event) => {
-    console.log(event.target.value);
+  const onClickAddItem = (event) => {
+    setItems([{ title: event.target.value }, ...items]);
   };
+
   return (
     <div className="App">
       <AppHeader></AppHeader>
-      <AddItem onClickAdd={showEvent}></AddItem>
+      <AddItem onClickAdd={onClickAddItem}></AddItem>
       {items.map((item) => (
         <Items title={item.title}></Items>
       ))}
